@@ -16,6 +16,8 @@ os_supported_matrix:
     min_version: "7"
   Fedora:
     min_version: ""
+  Rocky:
+    min_version: ""
   Amazon:
     min_version: ""
   # Debian based
