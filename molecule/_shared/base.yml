@@ -30,5 +30,8 @@ provisioner:
     group_vars:
       nomad_instances:
         nomad_node_role: both
+    host_vars:
+      rockylinux-9:
+        minimal_curl: true
 verifier:
   name: ansible
