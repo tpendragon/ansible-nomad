@@ -33,6 +33,9 @@ os_supported_matrix:
 ## Core
 nomad_debug: false
 
+## Package configuration
+nomad_curl_package: "{% if (ansible_distribution == 'AlmaLinux' and ansible_distribution_version is version('9', '>=')) %}curl-minimal{% else %}curl{% endif %}"
+
 ## Asserts
 nomad_skip_ensure_all_hosts: "{{ lookup('env', 'NOMAD_SKIP_ENSURE_ALL_HOSTS') | default('false', true) }}"
 
